@@ -17,6 +17,7 @@ public class Array {
         // another type of loop
         for (int i = 0; i < let.length; i++) {
             System.out.println(let[i]);
+            System.out.println();
         }
     }
 }
