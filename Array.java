@@ -1,4 +1,7 @@
 public class Array {
+
+
+
     public static void main(String[] args) {
         // declear arrays
         int[] nums = {1, 3, 5, 6};
@@ -9,7 +12,6 @@ public class Array {
         //change or access specific array
         System.out.println(let[0]);
         let[1] = "dag";
-
         // array loop
         for (int i: nums){
             System.out.println(i);

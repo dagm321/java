@@ -9,26 +9,11 @@ public class Abstraction  extends Abstraction1 {
         System.out.println('c');
     }
     public static void main(String[] args) {
+        // create an object from parent class
         Abstraction obj = new Abstraction();
         obj.method();
-        // 
+        
         obj.regularmethod();
     }
-    public void tryy() {
-        try {
-            int num = 10 / 0;
-            System.out.println(num);
-        } catch(ArithmeticException e) {
-            System.out.println("there are some arithimatic exception error");
-        } finally {
-            System.out.println("this code will be excuted whatever it is");
-        }
-    }
 
-    public void t() throws ArithmeticException{
-        int num = 0;
-        if (num < 1) {
-            throw new ArithmeticException("error");
-        }
-    }
 }
