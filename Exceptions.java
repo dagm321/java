@@ -33,6 +33,7 @@ public class Exceptions {
           //Fiie not found exception
         try {
         FileReader reader = new FileReader("my_file.txt");
+        reader.close();
         } catch (FileNotFoundException e) {
         System.out.println("Error: File not found");
         }
@@ -71,23 +72,13 @@ public class Exceptions {
 
     }
 
-
-
-    
+    // used to create errors
     public void userage(int age) throws ArithmeticException {
         if (age < 18) {
             throw new ArithmeticException("error");
         } else {
             System.out.println("pass");
-            
         }
-    }
-
-
-
-
-    public static void main(String[] args) {
-
     }
 
 }

@@ -33,6 +33,9 @@ public class Files {
         FileInputStream file = new FileInputStream("");
         byte[] data = new byte[file.available()];
         file.read(data);
+        for (byte b : data) {
+            System.out.print(b);
+        }
         file.close();
 
         //FileOutputStream
