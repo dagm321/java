@@ -43,10 +43,19 @@ public class Files {
         fil.close();
     }
 
+    public void filee() throws IOException{
+        //InputStreamReader and OutputStreamwriter
+        FileOutputStream output = new FileOutputStream("");
+        OutputStreamWriter out = new OutputStreamWriter(output);
+        String name = "dd";
+        out.write(name);
+        out.close();
+    }
+
 
 
 
 
         
     }
-}
+
